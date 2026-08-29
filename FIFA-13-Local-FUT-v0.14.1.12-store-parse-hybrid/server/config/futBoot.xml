@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FUT boot configuration, served to the "fut" service.
+
+  EA's authentic routing table, dumped from the game's memory
+  (analysis/extracted/ea-cfgrouting.xml), declares:
+
+      <file service="fut" type="network"
+            osdkVar="FUTBOOTCFGFILE_URL" defaultFile="futBoot.xml"/>
+
+  Structure taken from the FIFA 14 project (references/fifa14-personal-revival,
+  build_fut_boot_config_payload), which derived it from its own disassembly of
+  the retail client. It matches exactly what the FIFA 13 disassembly had produced
+  independently:
+
+    cfgVersion      compared at 0x0097DEF4
+    futDlc          compared at 0x0097DF11 (handler 0x00979850)
+    fut12           compared at 0x00979934 — this is an ELEMENT NAME, not an
+                    attribute value; the earlier attempts used attributes and a
+                    name="fut13", hence the failure
+    minorVersion    0x00973336        bootString      0x00973358
+    futNotAvailable 0x00973377        futSubVersion   string at VA 0x023A24C4
+    dimeUniqueId / futKeyType / key   read by the DIME parser at 0x008EC1D0:
+                    dimeUniqueId -> [object+0x148] (strtol base 16)
+                    futKeyType   -> [object+0x154] (strtol base 10)
+                    a <key> element encountered while [object+0x148] is still 0
+                    sets [object+0x13c]=1 and aborts — hence the order used here,
+                    where dimeUniqueId always precedes key.
+
+  [object+0x148] is one of the four fields required to be non-zero after parsing
+  (0x0097FFB7-0x0097FFD9) and it also feeds the owned flag: the identifiers are
+  therefore non-zero, while remaining synthetic and purely local.
+
+  The name "fut12" is kept as it is: it is the string this FIFA 13 compares.
+-->
+<FutCfg>
+  <cfgVersion>1</cfgVersion>
+  <futDlc>
+    <fut12>
+      <!--
+        FIFA 13-specific addition. The FIFA 14 document does not have this field
+        because its client does not read it; the FIFA 13 one does read it, at
+        0x0097312E, in the DLC handler.
+
+        Measured 6 August: with the FIFA 14 document as it stands, futStatus went
+        from 7 to 19 — cfgFileOk is at last 1 — and only bit 3,
+        requiredVersionAvailable, set at 0x008EBEC3, remains. That test queries
+        the DLC manager with [object+0x120], a value produced by parsing the
+        futBoot. The DLC actually installed declares fut_version = 1
+        (Game\dlc\dlc_CardsDLL\info.dlc), hence this aligned value.
+      -->
+      <fut_version>1</fut_version>
+      <minorVersion>1</minorVersion>
+      <bootString>fut12</bootString>
+      <futNotAvailable>0</futNotAvailable>
+      <revision>
+        <futSubVersion>1</futSubVersion>
+        <Language>
+          <dimeUniqueId>1</dimeUniqueId>
+          <size>1</size>
+        </Language>
+      </revision>
+      <key>
+        <dimeUniqueId>2</dimeUniqueId>
+        <futKeyType>0</futKeyType>
+      </key>
+    </fut12>
+  </futDlc>
+</FutCfg>

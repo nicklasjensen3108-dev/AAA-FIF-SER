@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Sergio Ramos",
+    "carddbid": 155862,
+    "reason": "The dump has his TOTY and his TOTS but no base row at all, so nothing ties his name to a carddbid and both cards were dropped. 155862 is the only unclaimed 87-rated Spanish CB in the shipped table, he is at Real Madrid (teamid 243), and his TOTS stats 83/65/79/76/90/95 are a uniform lift of the card's 79/61/75/72/84/88."
+  },
+  {
+    "name": "Dimitar Berbatov",
+    "carddbid": 30110,
+    "reason": "Only unclaimed 82-rated Bulgarian ST, at Fulham -- where he played in 2012/13. His 83 in-form is 69/83/81/83/39/80 against the card's 68/81/80/82/38/79, one point apiece."
+  },
+  {
+    "name": "Burak Yılmaz",
+    "carddbid": 124375,
+    "reason": "Only unclaimed 78-rated Turkish ST, at Galatasaray. His 83 in-form was the Champions League run that season."
+  },
+  {
+    "name": "Etienne Capoue",
+    "carddbid": 178213,
+    "reason": "Only unclaimed 79-rated French CDM, at Toulouse, which is where he was before Spurs. Every attribute on the 80 in-form is 2-7 above the card's."
+  },
+  {
+    "name": "Sébastien Puygrenier",
+    "carddbid": 150564,
+    "reason": "Only unclaimed 75-rated French CB, at AS Nancy. Two in-forms (80, 77) both hang off this one card."
+  },
+  {
+    "name": "Digão",
+    "carddbid": 192094,
+    "reason": "Only unclaimed 69-rated Brazilian CB, at Fluminense."
+  },
+  {
+    "name": "Alex Wilkinson",
+    "carddbid": 181479,
+    "reason": "Only unclaimed 67-rated Australian CB. Jeonbuk Hyundai Motors looks wrong for an Australian until you remember he spent 2012-13 in the K League."
+  },
+  {
+    "name": "Danny Cruz",
+    "carddbid": 190676,
+    "reason": "Only unclaimed 63-rated American RM, at Philadelphia Union. The 84 pace on the card is the giveaway -- it is what his 64 in-form is built on."
+  },
+  {
+    "name": "Edu Dracena",
+    "carddbid": 135465,
+    "reason": "His goldif 78 was orphaned: no row in the dump ties his name to a carddbid. 135465 is the only unclaimed 76-rated Brazilian CB, at Santos -- where he played -- and every attribute on the in-form is 1 to 4 above the card's 53/51/55/54/75/81."
+  },
+  {
+    "name": "Theo Walcott",
+    "carddbid": 164859,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:593, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Glen Johnson",
+    "carddbid": 137782,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:890, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Nicky Bailey",
+    "carddbid": 53978,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:4117, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Amin Affane",
+    "carddbid": 187916,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:7469, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Sorribas",
+    "carddbid": 113942,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:10320, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Mario Bermejo",
+    "carddbid": 189054,
+    "reason": "Identified from the leading half of the spliced row at Fifa13.csv:4561, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  },
+  {
+    "name": "Chris Kettings",
+    "carddbid": 202761,
+    "reason": "Identified from the leading half of the spliced row at FifA13gk.csv:1260, which a hand repair replaces. Without this the name has no source left in the dump and every special this player has is dropped.",
+    "generated": true
+  }
+]

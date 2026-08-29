@@ -1,0 +1,442 @@
+[
+  {
+    "reason": "Scrape error: labelled as a 98-rated TOTY Messi, but it carries Antonio Di Natale's wefut link and his stat line (SHO/PAS/DRI/DEF/PHY identical to the real Di Natale rows). Left in, it invents a second TOTY Messi. Dropped rather than repaired because the corrected content -- Di Natale's goldblue -- is already present verbatim elsewhere in the file.",
+    "file": "Fifa13.csv",
+    "bad": "Lionel Messi,98,CF,toty,Argentina,97,94,89,93,54,70,https://wefut.com/player/13/13119/antonio-di-natale",
+    "good": ""
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:100) -- leading fields are Rio Ferdinand's, trailing fields and the Link are Dante's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Rio Ferdinand,88,CB,goldblue,England,68,53,78,74,88,89,https://wefut.com/player/13/13037/dante",
+    "good": [
+      "Rio Ferdinand,88,CB,goldblue,England,68,53,78,69,91,87,https://wefut.com/player/13/13006/rio-ferdinand",
+      "Dante,87,CB,goldblue,Brazil,75,68,82,74,88,89,https://wefut.com/player/13/13037/dante"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:222) -- leading fields are Nicolás Gaitán's, trailing fields and the Link are Kevin-Prince Boateng's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Nicolás Gaitán,85,LM,goldif,Argentina,85,81,79,86,77,83,https://wefut.com/player/13/4488/kevin-prince-boateng",
+    "good": [
+      "Nicolás Gaitán,85,LM,goldif,Argentina,85,81,88,88,60,64,https://wefut.com/player/13/12840/nicolas-gaitan"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:272) -- leading fields are Phil Jagielka's, trailing fields and the Link are Patrice Evra's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Phil Jagielka,84,CB,goldblue,England,73,52,80,79,84,81,https://wefut.com/player/13/11262/patrice-evra",
+    "good": [
+      "Phil Jagielka,84,CB,goldblue,England,73,52,73,60,87,87,https://wefut.com/player/13/12928/phil-jagielka"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:297) -- leading fields are Patrice Evra's, trailing fields and the Link are Dani Alves's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Patrice Evra,84,LB,goldif,France,80,72,81,83,79,72,https://wefut.com/player/13/2200/dani-alves",
+    "good": [
+      "Patrice Evra,84,LB,goldif,France,80,52,80,79,84,81,https://wefut.com/player/13/11262/patrice-evra"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (FifA13gk.csv:51) -- leading fields are Júlio César's, trailing fields and the Link are Diego López's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "FifA13gk.csv",
+    "bad": "Júlio César,84,motm,Brazil,89,84,75,80,34,82,https://wefut.com/player/13/12234/diego-lopez",
+    "good": [
+      "Júlio César,84,motm,Brazil,89,83,68,88,59,87,https://wefut.com/player/13/13309/julio-cesar"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:347) -- leading fields are Gervinho's, trailing fields and the Link are Fernando Llorente's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Gervinho,83,RM,goldif,Ivory Coast,90,76,57,75,53,87,https://wefut.com/player/13/13562/fernando-llorente",
+    "good": [
+      "Gervinho,83,RM,goldif,Ivory Coast,90,76,79,90,58,72,https://wefut.com/player/13/12612/gervinho",
+      "Fernando Llorente,83,ST,goldrare,Spain,61,76,57,75,53,87,https://wefut.com/player/13/13562/fernando-llorente"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:421) -- leading fields are İlkay Gündoğan's, trailing fields and the Link are Gökhan Inler's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "İlkay Gündoğan,82,CAM,motm,Germany,70,77,83,79,80,74,https://wefut.com/player/13/11378/gokhan-inler",
+    "good": [
+      "İlkay Gündoğan,82,CAM,motm,Germany,86,79,85,89,69,70,https://wefut.com/player/13/14231/ilkay-gundogan"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:446) -- leading fields are Gökhan Inler's, trailing fields and the Link are Vágner Love's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Gökhan Inler,82,CM,goldif,Switzerland,84,76,62,83,49,74,https://wefut.com/player/13/12230/vagner-love",
+    "good": [
+      "Gökhan Inler,82,CM,goldif,Switzerland,70,77,83,79,80,74,https://wefut.com/player/13/11378/gokhan-inler"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:568) -- leading fields are Vedad Ibišević's, trailing fields and the Link are Theo Walcott's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Vedad Ibišević,81,ST,goldif,Bosnia Herzegovina,96,70,71,80,46,55,https://wefut.com/player/13/3557/theo-walcott",
+    "good": [
+      "Vedad Ibišević,81,ST,goldif,Bosnia Herzegovina,68,80,65,76,47,80,https://wefut.com/player/13/11183/vedad-ibisevic"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:667) -- leading fields are Javier Morales's, trailing fields and the Link are Christian Benítez's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Javier Morales,80,ST,goldif,Ecuador,88,81,67,81,49,81,https://wefut.com/player/13/12289/christian-benitez",
+    "good": [
+      "Javier Morales,80,ST,goldif,Ecuador,71,78,82,80,54,63,https://wefut.com/player/13/13983/javier-morales"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:692) -- leading fields are Christian Benítez's, trailing fields and the Link are Stefan Kießling's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Christian Benítez,80,ST,goldif,Ecuador,88,81,68,69,52,82,https://wefut.com/player/13/11160/stefan-kiessling",
+    "good": [
+      "Christian Benítez,80,ST,goldif,Ecuador,88,81,67,81,49,81,https://wefut.com/player/13/12289/christian-benitez",
+      "Stefan Kießling,80,ST,goldif,Germany,75,81,68,69,52,82,https://wefut.com/player/13/11160/stefan-kiessling"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:816) -- leading fields are Fabio Borini's, trailing fields and the Link are Xabi Prieto's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Fabio Borini,79,ST,motm,Italy,84,78,85,80,46,59,https://wefut.com/player/13/11581/xabi-prieto",
+    "good": [
+      "Fabio Borini,79,ST,motm,Italy,84,77,67,79,42,73,https://wefut.com/player/13/13261/fabio-borini"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:841) -- leading fields are Xabi Prieto's, trailing fields and the Link are André Schürrle's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Xabi Prieto,79,CAM,goldif,Spain,67,81,74,83,49,68,https://wefut.com/player/13/13804/andre-schurrle",
+    "good": [
+      "Xabi Prieto,79,CAM,goldif,Spain,67,78,85,80,46,59,https://wefut.com/player/13/11581/xabi-prieto",
+      "André Schürrle,79,LM,goldrare,Germany,88,81,74,83,49,68,https://wefut.com/player/13/13804/andre-schurrle"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:988) -- leading fields are Edu Dracena's, trailing fields and the Link are David Alaba's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Edu Dracena,78,LB,goldif,Austria,86,68,82,82,75,66,https://wefut.com/player/13/11260/david-alaba",
+    "good": [
+      "Edu Dracena,78,CB,goldif,Brazil,54,55,58,56,79,83,https://wefut.com/player/13/13981/edu-dracena"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (FifA13gk.csv:150) -- leading fields are Cristian Darío Álvarez's, trailing fields and the Link are Rafael's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "FifA13gk.csv",
+    "bad": "Cristian Darío Álvarez,78,goldif,Argentina,83,73,72,85,45,78,https://wefut.com/player/13/14083/rafael",
+    "good": [
+      "Cristian Darío Álvarez,78,goldif,Argentina,83,73,72,85,45,76,https://wefut.com/player/13/11259/cristian-dario-alvarez",
+      "Rafael,77,gold,Brazil,83,74,67,85,52,78,https://wefut.com/player/13/14083/rafael"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:1184) -- leading fields are Gökdeniz Karadeniz's, trailing fields and the Link are Benoît Trémoulinas's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Gökdeniz Karadeniz,77,LM,goldif,Turkey,78,71,76,76,78,67,https://wefut.com/player/13/11280/benoit-tremoulinas",
+    "good": [
+      "Gökdeniz Karadeniz,77,LM,goldif,Turkey,78,71,76,85,52,55,https://wefut.com/player/13/13062/gokdeniz-karadeniz",
+      "Benoît Trémoulinas,77,LWB,goldif,France,82,67,81,76,78,67,https://wefut.com/player/13/11280/benoit-tremoulinas"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:1973) -- leading fields are Camilo's, trailing fields and the Link are Graziano Pellè's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Camilo,74,ST,silverblue,Brazil,80,78,62,69,48,87,https://wefut.com/player/13/12958/graziano-pelle",
+    "good": [
+      "Camilo,74,ST,silverblue,Brazil,80,78,67,82,46,65,https://wefut.com/player/13/14265/camilo"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:1998) -- leading fields are Graziano Pellè's, trailing fields and the Link are Jiloan Hamad's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Graziano Pellè,74,ST,silverblue,Italy,60,58,64,78,50,43,https://wefut.com/player/13/13949/jiloan-hamad",
+    "good": [
+      "Graziano Pellè,74,ST,silverblue,Italy,60,75,62,69,48,87,https://wefut.com/player/13/12958/graziano-pelle"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2023) -- leading fields are Jiloan Hamad's, trailing fields and the Link are Tore Reginiussen's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Jiloan Hamad,74,RM,silverif,Sweden,72,50,66,54,80,73,https://wefut.com/player/13/13057/tore-reginiussen",
+    "good": [
+      "Jiloan Hamad,74,RM,silverif,Sweden,72,58,64,78,50,43,https://wefut.com/player/13/13949/jiloan-hamad"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2048) -- leading fields are Tore Reginiussen's, trailing fields and the Link are Atsuto Uchida's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Tore Reginiussen,74,CB,silverif,Norway,72,50,81,78,72,61,https://wefut.com/player/13/12291/atsuto-uchida",
+    "good": [
+      "Tore Reginiussen,74,CB,silverif,Norway,72,50,66,54,80,73,https://wefut.com/player/13/13057/tore-reginiussen"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2073) -- leading fields are Atsuto Uchida's, trailing fields and the Link are Patrick Ebert's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Atsuto Uchida,74,RB,silverif,Japan,82,75,79,74,55,62,https://wefut.com/player/13/11615/patrick-ebert",
+    "good": [
+      "Atsuto Uchida,74,RB,silverif,Japan,82,55,81,78,72,61,https://wefut.com/player/13/12291/atsuto-uchida"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2098) -- leading fields are Patrick Ebert's, trailing fields and the Link are Jordi Gómez's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Patrick Ebert,74,RM,silverif,Germany,77,75,76,77,50,62,https://wefut.com/player/13/11219/jordi-gomez",
+    "good": [
+      "Patrick Ebert,74,RM,silverif,Germany,77,75,79,74,55,62,https://wefut.com/player/13/11615/patrick-ebert"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2123) -- leading fields are Jordi Gómez's, trailing fields and the Link are Carlos Bocanegra's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Jordi Gómez,74,CF,silverif,Spain,69,44,60,57,75,79,https://wefut.com/player/13/14102/carlos-bocanegra",
+    "good": [
+      "Jordi Gómez,74,CF,silverif,Spain,69,75,76,77,50,62,https://wefut.com/player/13/11219/jordi-gomez"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (FifA13gk.csv:248) -- leading fields are Wolfgang Hesl's, trailing fields and the Link are Fabiano's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "FifA13gk.csv",
+    "bad": "Wolfgang Hesl,74,silverif,Germany,74,72,74,77,29,74,https://wefut.com/player/13/5992/fabiano",
+    "good": [
+      "Wolfgang Hesl,74,silverif,Germany,74,72,71,78,54,75,https://wefut.com/player/13/14153/wolfgang-hesl"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2563) -- leading fields are Henri Lansbury's, trailing fields and the Link are Jerome Thomas's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Henri Lansbury,73,CM,silverif,England,78,61,69,78,50,55,https://wefut.com/player/13/14119/jerome-thomas",
+    "good": [
+      "Henri Lansbury,73,CM,silverif,England,69,71,74,70,61,53,https://wefut.com/player/13/12304/henri-lansbury"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:3008) -- leading fields are Craig Dawson's, trailing fields and the Link are DJ Campbell's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Craig Dawson,72,CB,silverif,England,70,41,65,71,42,68,https://wefut.com/player/13/12634/dj-campbell",
+    "good": [
+      "Craig Dawson,72,CB,silverif,England,70,41,41,41,72,79,https://wefut.com/player/13/0/craigdawson"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:3502) -- leading fields are Henok Goitom's, trailing fields and the Link are Wayne Bridge's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Henok Goitom,71,ST,silverif,Sweden,53,53,74,65,73,73,https://wefut.com/player/13/13629/wayne-bridge",
+    "good": [
+      "Henok Goitom,71,ST,silverif,Sweden,64,68,58,73,42,79,https://wefut.com/player/13/13301/henok-goitom",
+      "Wayne Bridge,71,LB,silverrare,England,53,53,74,65,73,73,https://wefut.com/player/13/13629/wayne-bridge"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:7371) -- leading fields are Ezequiel Scarione's, trailing fields and the Link are Johan Larsson's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Ezequiel Scarione,64,CAM,bronzeblue,Argentina,85,66,60,62,60,52,https://wefut.com/player/13/13882/johan-larsson",
+    "good": [
+      "Ezequiel Scarione,64,CAM,bronzeblue,Argentina,74,70,63,70,50,53,https://wefut.com/player/13/12968/ezequiel-scarione",
+      "Johan Larsson,64,RB,bronzeif,Sweden,85,66,60,62,60,52,https://wefut.com/player/13/13882/johan-larsson"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:7444) -- leading fields are Niall McGinn's, trailing fields and the Link are Amin Affane's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Niall McGinn,64,ST,bronzeif,Northern Ireland,85,63,62,74,40,47,https://wefut.com/player/13/13843/amin-affane",
+    "good": [
+      "Niall McGinn,64,ST,bronzeif,Northern Ireland,85,71,65,72,40,54,https://wefut.com/player/13/11436/niall-mcginn"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (FifA13gk.csv:765) -- leading fields are Daouda Diakite's, trailing fields and the Link are Clint Bolton's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "FifA13gk.csv",
+    "bad": "Daouda Diakite,64,bronzeif,Burkina Faso,74,61,55,71,26,55,https://wefut.com/player/13/5261/clint-bolton",
+    "good": [
+      "Daouda Diakite,64,bronzeif,Burkina Faso,74,61,55,71,26,62,https://wefut.com/player/13/11690/daouda-diakite"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2836) -- leading fields are Juanfran's, trailing fields and the Link are Alfreð Finnbogason's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Juanfran,73,LB,silverrare,Spain,67,70,54,69,42,70,https://wefut.com/player/13/12316/alfred-finnbogason",
+    "good": [
+      "Alfreð Finnbogason,73,ST,silver,Iceland,67,70,54,69,42,70,https://wefut.com/player/13/12316/alfred-finnbogason"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:5519) -- leading fields are Alexander Aas's, trailing fields and the Link are Noé Pamarot's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Alexander Aas,68,CB,silver,Norway,25,41,48,42,68,75,https://wefut.com/player/13/12453/noe-pamarot",
+    "good": [
+      "Noé Pamarot,67,CB,silverrare,France,25,41,48,42,68,75,https://wefut.com/player/13/12453/noe-pamarot"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:5665) -- leading fields are Mosquera's, trailing fields and the Link are Tomislav Mikulic's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Mosquera,67,CM,silver,Spain,63,44,60,54,69,70,https://wefut.com/player/13/12783/tomislav-mikulic",
+    "good": [
+      "Tomislav Mikulic,67,CB,silver,Croatia,63,44,60,54,69,70,https://wefut.com/player/13/12783/tomislav-mikulic"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:6223) -- leading fields are Jorge Larena's, trailing fields and the Link are Matthias Zimmermann's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Jorge Larena,66,CAM,silver,Spain,77,45,64,65,64,50,https://wefut.com/player/13/12492/matthias-zimmermann",
+    "good": [
+      "Matthias Zimmermann,66,RB,silver,Germany,77,45,64,65,64,50,https://wefut.com/player/13/12492/matthias-zimmermann"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:6830) -- leading fields are Julien François's, trailing fields and the Link are Bongani Khumalo's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Julien François,65,CDM,silverrare,South Africa,75,20,22,30,66,69,https://wefut.com/player/13/13708/bongani-khumalo",
+    "good": [
+      "Bongani Khumalo,65,CB,silver,South Africa,75,20,22,30,66,69,https://wefut.com/player/13/13708/bongani-khumalo"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:8837) -- leading fields are Oliver Bozanic's, trailing fields and the Link are Michael Ngoo's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Oliver Bozanic,62,LM,bronzerare,Australia,74,56,43,63,41,64,https://wefut.com/player/13/11900/michael-ngoo",
+    "good": [
+      "Michael Ngoo,62,ST,bronzerare,England,74,56,43,63,41,64,https://wefut.com/player/13/11900/michael-ngoo"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:9055) -- leading fields are Steeve Joseph-Reinette's, trailing fields and the Link are Alan Bennett's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Steeve Joseph-Reinette,62,RB,bronzerare,Republic of Ireland,48,27,37,30,63,67,https://wefut.com/player/13/12745/alan-bennett",
+    "good": [
+      "Alan Bennett,62,CB,bronze,Republic of Ireland,48,27,37,30,63,67,https://wefut.com/player/13/12745/alan-bennett"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:10004) -- leading fields are Johannes Ertl's, trailing fields and the Link are Shaun Harrad's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Johannes Ertl,60,RB,bronzerare,Austria,72,59,37,48,43,59,https://wefut.com/player/13/13858/shaun-harrad",
+    "good": [
+      "Shaun Harrad,60,ST,bronze,England,72,59,37,48,43,59,https://wefut.com/player/13/13858/shaun-harrad"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:10663) -- leading fields are Chris Beardsley's, trailing fields and the Link are Elfar Freyr Helgason's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Chris Beardsley,59,ST,bronze,England,59,42,48,46,57,71,https://wefut.com/player/13/13778/elfar-freyr-helgason",
+    "good": [
+      "Elfar Freyr Helgason,58,CB,bronzerare,Iceland,59,42,48,46,57,71,https://wefut.com/player/13/13778/elfar-freyr-helgason"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:593) -- leading fields are Theo Walcott's, trailing fields and the Link are Kwadwo Asamoah's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Theo Walcott,81,RW,goldrare,England,83,76,78,83,77,75,https://wefut.com/player/13/12249/kwadwo-asamoah",
+    "good": [
+      "Kwadwo Asamoah,81,LM,gold,Ghana,83,76,78,83,77,75,https://wefut.com/player/13/12249/kwadwo-asamoah"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:890) -- leading fields are Glen Johnson's, trailing fields and the Link are Mattia Cassani's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Glen Johnson,79,RB,goldrare,England,87,62,78,75,76,73,https://wefut.com/player/13/11797/mattia-cassani",
+    "good": [
+      "Mattia Cassani,79,RB,gold,Italy,79,62,78,75,76,73,https://wefut.com/player/13/11797/mattia-cassani"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:2173) -- leading fields are Winston Reid's, trailing fields and the Link are Nacer Barazite's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Winston Reid,74,CB,silverrare,New Zealand,68,71,66,79,43,62,https://wefut.com/player/13/11764/nacer-barazite",
+    "good": [
+      "Winston Reid,74,CB,silverrare,New Zealand,68,47,53,47,75,78,https://wefut.com/player/13/12330/winston-reid",
+      "Nacer Barazite,74,CAM,silverrare,Netherlands,74,71,66,79,43,62,https://wefut.com/player/13/11764/nacer-barazite"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:4117) -- leading fields are Nicky Bailey's, trailing fields and the Link are David Cortés's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Nicky Bailey,70,CDM,silver,England,71,34,63,66,72,63,https://wefut.com/player/13/12011/david-cortes",
+    "good": [
+      "David Cortés,70,RB,silver,Spain,71,34,63,66,72,63,https://wefut.com/player/13/12011/david-cortes"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:7469) -- leading fields are Amin Affane's, trailing fields and the Link are José Vega's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Amin Affane,64,LM,bronzerare,Sweden,75,58,61,66,44,58,https://wefut.com/player/13/12408/jose-vega",
+    "good": [
+      "José Vega,64,LM,bronzerare,Spain,75,58,61,66,44,58,https://wefut.com/player/13/12408/jose-vega"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:10320) -- leading fields are Sorribas's, trailing fields and the Link are Stephen McLaughlin's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Sorribas,60,CDM,bronze,Spain,50,51,54,60,30,54,https://wefut.com/player/13/12118/stephen-mclaughlin",
+    "good": [
+      "Stephen McLaughlin,59,LM,bronzerare,Republic of Ireland,80,51,54,60,30,54,https://wefut.com/player/13/12118/stephen-mclaughlin"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (Fifa13.csv:4561) -- leading fields are Mario Bermejo's, trailing fields and the Link are Francisco Sandaza's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "Fifa13.csv",
+    "bad": "Mario Bermejo,69,ST,silverrare,Spain,65,65,61,68,38,72,https://wefut.com/player/13/14192/francisco-sandaza",
+    "good": [
+      "Mario Bermejo,69,ST,silverrare,Spain,65,65,61,68,38,72,https://wefut.com/player/13/0/mariobermejo",
+      "Francisco Sandaza,69,ST,silver,Spain,65,65,61,68,38,72,https://wefut.com/player/13/14192/francisco-sandaza"
+    ],
+    "generated": true
+  },
+  {
+    "reason": "Spliced row (FifA13gk.csv:1260) -- leading fields are Chris Kettings's, trailing fields and the Link are Reyaad Pieterse's. Neither card is this row. Replacement looked up by hand from the sheet `fut13 carddb splices` writes; see docs/research/spliced-rows-all.md.",
+    "file": "FifA13gk.csv",
+    "bad": "Chris Kettings,55,bronze,Scotland,58,52,49,58,48,53,https://wefut.com/player/13/11950/reyaad-pieterse",
+    "good": [
+      "Chris Kettings,55,bronze,Scotland,58,52,49,58,48,53,https://wefut.com/player/13/0/chriskettings",
+      "Reyaad Pieterse,54,bronze,South Africa,55,54,52,56,43,54,https://wefut.com/player/13/11950/reyaad-pieterse"
+    ],
+    "generated": true
+  }
+]

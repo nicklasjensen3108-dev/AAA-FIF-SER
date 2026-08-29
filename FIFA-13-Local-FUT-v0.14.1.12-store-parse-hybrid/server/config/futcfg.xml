@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FutCfg document served to the routing table's "fut" service.
+
+  The root element must be named exactly FutCfg: the parser (0x0097fef0) compares
+  the node name against the string "FutCfg" (VA 0x023a33e0) before processing
+  anything at all. It sets [object+0x14d] = 1 as soon as it is entered, which is
+  the first of the four cfgFileOk conditions.
+
+  Fields compared by the code:
+    cfgVersion  (0x0097def4)
+    futDlc      (0x0097df11, handler 0x00979850)
+  and in the DLC handler (0x0097312e-0x00973377):
+    fut_version, minorVersion, bootString, futNotAvailable
+
+  fut_version is aligned with the DLC actually installed
+  (Game\dlc\dlc_CardsDLL\info.dlc: id FUTDLC01, fut_dll CardsDLL, fut_version 1).
+
+  Attribute versus element text is not yet settled by the disassembly: both forms
+  are supplied.
+-->
+<FutCfg cfgVersion="1">
+  <cfgVersion>1</cfgVersion>
+  <futDlc name="fut13"
+          fut_version="1"
+          minorVersion="0"
+          bootString="fut13"
+          futNotAvailable="0">
+    <fut_version>1</fut_version>
+    <minorVersion>0</minorVersion>
+    <bootString>fut13</bootString>
+    <futNotAvailable>0</futNotAvailable>
+  </futDlc>
+</FutCfg>

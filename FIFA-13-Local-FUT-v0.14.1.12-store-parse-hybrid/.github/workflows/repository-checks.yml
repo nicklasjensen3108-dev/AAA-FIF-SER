@@ -1,0 +1,65 @@
+﻿name: repository-checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile Python tools
+        shell: pwsh
+        run: python -m compileall -q tools
+
+      - name: Parse PowerShell files
+        shell: pwsh
+        run: |
+          $failed = $false
+          Get-ChildItem -Recurse -File -Filter *.ps1 | ForEach-Object {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              $failed = $true
+              Write-Host "PowerShell parser errors in $($_.FullName)" -ForegroundColor Red
+              $errors | ForEach-Object { Write-Host $_.Message -ForegroundColor Red }
+            }
+          }
+          if ($failed) { exit 1 }
+
+      - name: Verify release hygiene
+        shell: pwsh
+        run: |
+          if ((Get-Content BUILD_VERSION.txt -Raw).Trim() -ne 'v0.14.1.9') { throw 'BUILD_VERSION.txt is not v0.14.1.9' }
+          $forbidden = @(
+            'required/CardsDLLzf.dll',
+            'local.settings.json',
+            'save/fut13-local.sqlite3',
+            'data/fifa13-full-player-catalog.json',
+            'data/fifa13-native-item-catalog.json',
+            'src/bridge/secrets/gosredirector.key',
+            'src/bridge/secrets/gosredirector.ea.com.pfx',
+            'src/bridge/secrets/gosredirector.protossl.der'
+          )
+          foreach ($path in $forbidden) {
+            if (Test-Path -LiteralPath $path) { throw "Forbidden generated/proprietary file committed: $path" }
+          }
+          if (-not (Test-Path 'src/bridge/out/Fut13Local.Bridge.exe')) { throw 'Bundled bridge runtime is missing.' }
+          if (-not (Test-Path 'tools/trace_proxy.py')) { throw 'Python trace proxy is missing.' }
+          if (-not (Test-Path 'tools/autoattach.py')) { throw 'Python autoattach helper is missing.' }
+          if (Get-ChildItem required -Filter *.dll -File -ErrorAction SilentlyContinue) { throw 'EA DLL present under required/; public repository must not contain it.' }
+          $bridgeText = [Text.Encoding]::Unicode.GetString([IO.File]::ReadAllBytes('src/bridge/out/Fut13Local.Bridge.dll'))
+          if ($bridgeText -notlike '*FUT/STORE_USE_TRANSACTION*') { throw 'Prebuilt bridge is stale: Store transaction config missing.' }
+          if (-not (Select-String -Path README.md -SimpleMatch '35BDAC6BB2F37F4E3F674C5BB979BCB607FEB11CD09105631796D566590FFC06' -Quiet)) {
+            throw 'README does not document the CL1298564 CardsDLL hash.'
+          }
+          if (-not (Select-String -Path README.md -SimpleMatch '7D8A7EEAAAFEDF41EA407D497042C79E168D391D6AF5A2F692F870372284E089' -Quiet)) {
+            throw 'README does not document the CL1217703 CardsDLL hash.'
+          }

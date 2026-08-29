@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Second draft. The first one used <FutCfg> as the root, which was wrong: that
+  root belongs to a *different*, FUT-specific download (the completion callback
+  at 0x008ec320 only parses transfers whose name starts with "fut", and none of
+  dimecfg/storecfg/storedesc does).
+
+  storecfg.xml is EAStore metadata. Element names come from the module's own
+  symbols in .rdata (0x02428734..0x024292e8):
+    EA::Store::MetadataFactory        -> store, configFormatVersion,
+                                         localization, xliff
+    EA::Store::MetaCategory           -> categories
+    EA::Store::MetaDependency         -> dependencies, prerequisite, preclusion
+    EA::Store::MetaNucleusAssociation -> nucleusassociations, entitlement,
+                                         ofbid, cond, show, dependency
+  MetaNucleusAssociation::ParseMainMetadata reads an entitlement with the
+  scanf pattern "%[^':']:%d", i.e. "<tag>:<number>".
+
+  EA::Store::MetaDependency::Update logs
+    "storecfg specifies entitlement: %s (present %d)"
+  so the entitlement named here is matched against the account's entitlement
+  list. The bridge grants FIFA13PCFUTContentUnlocks (group FIFA13PC, product
+  fifa13_pc), so that is the tag declared here rather than an invented one.
+-->
+<store configFormatVersion="1">
+  <categories>
+    <category id="1" name="fut"/>
+  </categories>
+
+  <dependencies>
+    <dependency name="fut13">
+      <prerequisite entitlement="FIFA13PCFUTContentUnlocks:1"/>
+    </dependency>
+  </dependencies>
+
+  <nucleusassociations>
+    <nucleusassociation entitlement="FIFA13PCFUTContentUnlocks:1"
+                        ofbid="fifa13_pc"
+                        show="1"
+                        dependency="fut13"/>
+  </nucleusassociations>
+
+  <featureditems/>
+</store>

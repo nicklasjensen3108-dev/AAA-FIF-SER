@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  First draft, shaped from the parser at VA 0x008ec1d0 in the decrypted dump.
+
+  That parser walks nodes and reacts to three names:
+    dimeUniqueId -> value read with strtol(base 16) into [this+0x148]
+    futKeyType   -> value read with strtol(base 10) into [this+0x154]
+    key          -> if [this+0x148] is still 0 here it sets the in-progress/error
+                    byte [this+0x13c] = 1 and aborts, so dimeUniqueId must be
+                    established before any <key> node is seen.
+
+  [this+0x148] is one of the four fields the FutCfg parser requires non-zero,
+  and it is also the value fed to the "owned" check at 0x008ebe6f, so it must
+  end up non-zero.
+
+  Whether the parser reads these as attributes or as element text is not yet
+  settled from the disassembly, so this draft supplies both spellings.
+-->
+<dimecfg dimeUniqueId="1" futKeyType="1">
+  <dimeUniqueId>1</dimeUniqueId>
+  <futKeyType>1</futKeyType>
+</dimecfg>

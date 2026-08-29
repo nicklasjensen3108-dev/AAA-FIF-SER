@@ -1,0 +1,21 @@
+FIFA 13 Local FUT v0.14.1.12 - Store parse hybrid
+
+Base:
+  v0.14.1.11 (store parse fix.zip)
+
+Imported from the working CL1217703 / 7D8 test package:
+  server/fut13-dime-server.ps1 legacy Store metadata/content behavior
+  server/config/storepackdescriptions.en_us.xml
+  server/config/packs_backgrounds_1.png
+  server/config/packs_backgrounds_2.png
+  server/config/packs_backgrounds_3.png
+  server/config/packs_backgrounds_4.png
+
+Deliberately NOT imported:
+  donor fut13-rs4-server.ps1
+  donor launcher/runtime pairing
+  donor trace/native profile implementation
+
+The v0.14.1.11 RS4 server and current dual-build runtime pairing remain intact.
+The unsuccessful v0.14.1.11 CL121 native Store force-ready hook is disabled so
+CL1217703 can use the working natural DIME/XML Store initialisation path.

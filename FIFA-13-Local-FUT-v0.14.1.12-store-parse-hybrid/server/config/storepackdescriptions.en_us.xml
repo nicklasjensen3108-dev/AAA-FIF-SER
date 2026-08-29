@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="storepackdescriptions">
+    <body>
+      <trans-unit id="FUT_STORE_PACK_1_NAME" resname="FUT_STORE_PACK_1_NAME">
+        <source>Bronze Pack</source>
+        <target>Bronze Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_1_DESC" resname="FUT_STORE_PACK_1_DESC">
+        <source>12 items, including players and consumables. At least 1 Rare.</source>
+        <target>12 items, including players and consumables. At least 1 Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_2_NAME" resname="FUT_STORE_PACK_2_NAME">
+        <source>Premium Bronze Pack</source>
+        <target>Premium Bronze Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_2_DESC" resname="FUT_STORE_PACK_2_DESC">
+        <source>12 Bronze items, including players and consumables. At least 3 Rares.</source>
+        <target>12 Bronze items, including players and consumables. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_3_NAME" resname="FUT_STORE_PACK_3_NAME">
+        <source>Silver Pack</source>
+        <target>Silver Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_3_DESC" resname="FUT_STORE_PACK_3_DESC">
+        <source>12 Silver items, including players and consumables. At least 1 Rare.</source>
+        <target>12 Silver items, including players and consumables. At least 1 Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_4_NAME" resname="FUT_STORE_PACK_4_NAME">
+        <source>Premium Silver Pack</source>
+        <target>Premium Silver Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_4_DESC" resname="FUT_STORE_PACK_4_DESC">
+        <source>12 Silver items, including players and consumables. At least 3 Rares.</source>
+        <target>12 Silver items, including players and consumables. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_5_NAME" resname="FUT_STORE_PACK_5_NAME">
+        <source>Gold Pack</source>
+        <target>Gold Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_5_DESC" resname="FUT_STORE_PACK_5_DESC">
+        <source>12 Gold items, including players and consumables. At least 1 Rare.</source>
+        <target>12 Gold items, including players and consumables. At least 1 Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_6_NAME" resname="FUT_STORE_PACK_6_NAME">
+        <source>Premium Gold Pack</source>
+        <target>Premium Gold Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_6_DESC" resname="FUT_STORE_PACK_6_DESC">
+        <source>12 Gold items, including players and consumables. At least 3 Rares.</source>
+        <target>12 Gold items, including players and consumables. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_7_NAME" resname="FUT_STORE_PACK_7_NAME">
+        <source>Premium Gold Players Pack</source>
+        <target>Premium Gold Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_7_DESC" resname="FUT_STORE_PACK_7_DESC">
+        <source>12 Gold players. At least 3 Rares.</source>
+        <target>12 Gold players. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_8_NAME" resname="FUT_STORE_PACK_8_NAME">
+        <source>Prime Gold Players Pack</source>
+        <target>Prime Gold Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_8_DESC" resname="FUT_STORE_PACK_8_DESC">
+        <source>12 Gold players. At least 6 Rares.</source>
+        <target>12 Gold players. At least 6 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_9_NAME" resname="FUT_STORE_PACK_9_NAME">
+        <source>Rare Players Pack</source>
+        <target>Rare Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_9_DESC" resname="FUT_STORE_PACK_9_DESC">
+        <source>12 Gold players, all Rare.</source>
+        <target>12 Gold players, all Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_10_NAME" resname="FUT_STORE_PACK_10_NAME">
+        <source>Jumbo Rare Players Pack</source>
+        <target>Jumbo Rare Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_10_DESC" resname="FUT_STORE_PACK_10_DESC">
+        <source>24 Gold players, all Rare.</source>
+        <target>24 Gold players, all Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_11_NAME" resname="FUT_STORE_PACK_11_NAME">
+        <source>Premium Silver Players Pack</source><target>Premium Silver Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_11_DESC" resname="FUT_STORE_PACK_11_DESC">
+        <source>12 Silver players. At least 3 Rares.</source><target>12 Silver players. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_12_NAME" resname="FUT_STORE_PACK_12_NAME">
+        <source>Prime Silver Players Pack</source><target>Prime Silver Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_12_DESC" resname="FUT_STORE_PACK_12_DESC">
+        <source>12 Silver players. At least 6 Rares.</source><target>12 Silver players. At least 6 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_13_NAME" resname="FUT_STORE_PACK_13_NAME">
+        <source>Rare Silver Players Pack</source><target>Rare Silver Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_13_DESC" resname="FUT_STORE_PACK_13_DESC">
+        <source>12 Silver players, all Rare.</source><target>12 Silver players, all Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_14_NAME" resname="FUT_STORE_PACK_14_NAME">
+        <source>Premium Bronze Players Pack</source><target>Premium Bronze Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_14_DESC" resname="FUT_STORE_PACK_14_DESC">
+        <source>12 Bronze players. At least 3 Rares.</source><target>12 Bronze players. At least 3 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_15_NAME" resname="FUT_STORE_PACK_15_NAME">
+        <source>Prime Bronze Players Pack</source><target>Prime Bronze Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_15_DESC" resname="FUT_STORE_PACK_15_DESC">
+        <source>12 Bronze players. At least 6 Rares.</source><target>12 Bronze players. At least 6 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_16_NAME" resname="FUT_STORE_PACK_16_NAME">
+        <source>Rare Bronze Players Pack</source><target>Rare Bronze Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_16_DESC" resname="FUT_STORE_PACK_16_DESC">
+        <source>12 Bronze players, all Rare.</source><target>12 Bronze players, all Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_17_NAME" resname="FUT_STORE_PACK_17_NAME">
+        <source>Gold Players Pack</source>
+        <target>Gold Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_17_DESC" resname="FUT_STORE_PACK_17_DESC">
+        <source>12 Gold players. At least 1 Rare.</source>
+        <target>12 Gold players. At least 1 Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_18_NAME" resname="FUT_STORE_PACK_18_NAME">
+        <source>Small Rare Gold Players Pack</source>
+        <target>Small Rare Gold Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_18_DESC" resname="FUT_STORE_PACK_18_DESC">
+        <source>6 Gold players. All Rare.</source>
+        <target>6 Gold players. All Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_19_NAME" resname="FUT_STORE_PACK_19_NAME">
+        <source>Mega Gold Players Pack</source>
+        <target>Mega Gold Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_19_DESC" resname="FUT_STORE_PACK_19_DESC">
+        <source>18 Gold players. At least 12 Rares.</source>
+        <target>18 Gold players. At least 12 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_20_NAME" resname="FUT_STORE_PACK_20_NAME">
+        <source>Ultimate Players Pack</source>
+        <target>Ultimate Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_20_DESC" resname="FUT_STORE_PACK_20_DESC">
+        <source>30 Gold players. All Rare.</source>
+        <target>30 Gold players. All Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_21_NAME" resname="FUT_STORE_PACK_21_NAME">
+        <source>Small Rare Silver Players Pack</source>
+        <target>Small Rare Silver Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_21_DESC" resname="FUT_STORE_PACK_21_DESC">
+        <source>6 Silver players. All Rare.</source>
+        <target>6 Silver players. All Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_22_NAME" resname="FUT_STORE_PACK_22_NAME">
+        <source>Small Rare Bronze Players Pack</source>
+        <target>Small Rare Bronze Players Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_22_DESC" resname="FUT_STORE_PACK_22_DESC">
+        <source>6 Bronze players. All Rare.</source>
+        <target>6 Bronze players. All Rare.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_23_NAME" resname="FUT_STORE_PACK_23_NAME">
+        <source>Jumbo Premium Gold Pack</source><target>Jumbo Premium Gold Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_23_DESC" resname="FUT_STORE_PACK_23_DESC">
+        <source>24 Gold items with 7 players and plenty of consumables. At least 7 Rares.</source><target>24 Gold items with 7 players and plenty of consumables. At least 7 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_24_NAME" resname="FUT_STORE_PACK_24_NAME">
+        <source>Mega Pack</source><target>Mega Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_24_DESC" resname="FUT_STORE_PACK_24_DESC">
+        <source>30 Gold items with 12 players and 18 club or consumable items. At least 18 Rares.</source><target>30 Gold items with 12 players and 18 club or consumable items. At least 18 Rares.</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_25_NAME" resname="FUT_STORE_PACK_25_NAME">
+        <source>Rare Mega Pack</source><target>Rare Mega Pack</target>
+      </trans-unit>
+      <trans-unit id="FUT_STORE_PACK_25_DESC" resname="FUT_STORE_PACK_25_DESC">
+        <source>30 Gold items with 12 players and 18 club or consumable items. All Rare.</source><target>30 Gold items with 12 players and 18 club or consumable items. All Rare.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

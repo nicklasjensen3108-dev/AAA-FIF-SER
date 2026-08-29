@@ -1,0 +1,24 @@
+# Third-party packages the Python tools in this directory import.
+#
+#   python -m pip install -r tools/requirements.txt
+#
+# Everything else they use (struct, zlib, pathlib, argparse, json) is stdlib, so
+# the pure-container tools -- apt.py, aptdis.py, bigfile.py, chunkzip.py,
+# scan_apt.py, gamepath.py -- need nothing installed at all.
+
+# Dynamic instrumentation of the running game.
+#   tools/trace_fifa13_futgate.py
+#   attic/probe_archives.py, attic/probe_loadmovie.py, attic/probe_fut2_result.py
+# The tracer's agent resolves exports through whichever API shape the runtime
+# offers, so both the pre-17 static Module.getExportByName and the Frida 17
+# per-module form work.
+frida
+
+# x86 disassembly.
+#   tools/disasm.py, tools/scan_field.py
+#   tools/readdump.py (imported lazily: the dump summary still prints without it)
+capstone
+
+# PE parsing: section table, image base, loader-style flattening.
+#   tools/disasm.py, tools/scan_field.py, tools/find_icebreaker.py
+pefile

@@ -1,0 +1,16 @@
+* text=auto
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.cs text eol=crlf
+*.csproj text eol=crlf
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.dll binary
+*.exe binary
+*.pfx binary
+*.der binary
+*.png binary
